@@ -1,0 +1,133 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.auth-form input {
+  padding: 0.65rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a1b;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.auth-form input::placeholder {
+  color: #999999;
+}
+
+.auth-submit {
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #111;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-divider {
+  text-align: center;
+  margin: 1rem 0;
+  color: #888888;
+  font-size: 0.9rem;
+}
+
+.auth-toggle {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.auth-toggle p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d0d0d0;
+}
+
+.auth-toggle button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signin-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.signin-modal {
+  background: #0f0f10;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 360px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .signin-modal {
+    width: 90vw;
+    max-width: 360px;
+    padding: 1.2rem;
+  }
+
+  .auth-form input {
+    padding: 0.6rem 0.75rem;
+  }
+}
+
+.signin-modal h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.signin-modal p {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: transparent;
+  border: none;
+  color: #c0c0c0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.google-signin {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.signin-error {
+  margin-bottom: 0.75rem;
+  color: #ff8888;
+}
+
+.modal-footnote {
+  margin-top: 0.75rem;
+  color: #b0b0b0;
+}

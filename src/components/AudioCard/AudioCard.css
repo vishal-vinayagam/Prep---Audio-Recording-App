@@ -1,0 +1,213 @@
+.audio-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.audio-card.dark {
+  background-color: #0a0a0a;
+  border: 1px solid #333333;
+}
+
+.audio-card.light {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+}
+
+.audio-card.expanded {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card-header:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.audio-card.light .card-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.audio-card.dark .card-meta {
+  color: #b0b0b0;
+  opacity: 0.95;
+}
+
+.audio-card.light .card-meta {
+  color: #666666;
+  opacity: 0.8;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.expand-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.audio-card.light .expand-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.expand-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.expand-icon::before,
+.expand-icon::after {
+  content: '';
+  position: absolute;
+  background-color: currentColor;
+}
+
+.expand-icon::before {
+  width: 12px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.expand-icon::after {
+  width: 2px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.expand-icon.expanded::after {
+  height: 0;
+}
+
+.card-content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.share-panel {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.share-item {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.share-item:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.25);
+  transform: translateY(-1px);
+}
+
+.audio-card.dark .card-actions {
+  border-top: 1px solid #333333;
+}
+
+.audio-card.light .card-actions {
+  border-top: 1px solid #e0e0e0;
+}
+
+.action-button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-button {
+  background-color: transparent;
+}
+
+.audio-card.dark .share-button {
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+.audio-card.light .share-button {
+  color: #000000;
+  border: 1px solid #cccccc;
+}
+
+.share-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.audio-card.light .share-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.delete-button {
+  background-color: #ff4444;
+  color: #ffffff;
+}
+
+.delete-button:hover {
+  background-color: #ff3333;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    padding: 1rem;
+  }
+  
+  .card-content {
+    padding: 0 1rem 1rem;
+  }
+  
+  .card-actions {
+    flex-direction: column;
+  }
+}

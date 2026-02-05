@@ -1,0 +1,98 @@
+.footer {
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.footer.dark {
+  background-color: #000000;
+  border-top: 1px solid #333333;
+}
+
+.footer.light {
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.app-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer.dark .app-name {
+  color: #ffffff;
+}
+
+.footer.light .app-name {
+  color: #000000;
+}
+
+.creator-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer.dark .creator-text {
+  color: #ffffff;
+}
+
+.footer.light .creator-text {
+  color: #000000;
+}
+
+.heart {
+  color: #ff4444;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.copyright {
+  margin: 0;
+  font-size: 0.9rem;
+}\n\n.footer.dark .copyright {
+  color: #d0d0d0;
+  opacity: 0.95;
+}
+
+.footer.light .copyright {
+  color: #666666;
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}

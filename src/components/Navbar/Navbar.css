@@ -1,0 +1,154 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.navbar.dark {
+  background-color: #000000;
+  border-bottom: 1px solid #333333;
+}
+
+.navbar.light {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.03);
+  padding: 4px;
+}
+
+.app-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar.dark .app-name {
+  color: #ffffff;
+}
+
+.navbar.light .app-name {
+  color: #000000;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar.dark .nav-link {
+  color: #cccccc;
+}
+
+.navbar.dark .nav-link:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.navbar.light .nav-link {
+  color: #555555;
+}
+
+.navbar.light .nav-link:hover {
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.navbar.dark .nav-link.active {
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.04);
+}
+
+.navbar.light .nav-link.active {
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-left {
+    gap: 0.5rem;
+  }
+
+  .nav-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .app-name {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-right {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .nav-left {
+    gap: 0.3rem;
+  }
+
+  .app-name {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+  .nav-right {
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}

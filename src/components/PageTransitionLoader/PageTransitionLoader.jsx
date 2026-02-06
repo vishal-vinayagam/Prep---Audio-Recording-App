@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImage from '../../assets/logo.png';
 import './PageTransitionLoader.css';
 
 const PageTransitionLoader = ({ show }) => {
@@ -7,7 +8,7 @@ const PageTransitionLoader = ({ show }) => {
   return (
     <div className="page-transition-overlay">
       <div className="transition-loader">
-        <img src="/logo.png" alt="Prep Logo" className="loader-logo" />
+        <img src={logoImage} alt="Prep Logo" className="loader-logo" />
         <div className="loader-spinner"></div>
       </div>
     </div>

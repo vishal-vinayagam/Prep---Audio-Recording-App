@@ -111,7 +111,6 @@ const Home = ({ user }) => {
               <li>Record unlimited audio notes</li>
               <li>Store locally in your browser</li>
               <li>Organize in personal library</li>
-              <li>No internet required</li>
             </ul>
           </div>
         )}

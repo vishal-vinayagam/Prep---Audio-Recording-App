@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 import ProfileDropdown from '../ProfileDropdown/ProfileDropdown';
+import logoImage from '../../assets/logo.png';
 import './Navbar.css';
 
 const Navbar = ({ user, onRequestSignIn, onLogout }) => {
@@ -10,7 +11,7 @@ const Navbar = ({ user, onRequestSignIn, onLogout }) => {
   return (
     <nav className={`navbar ${theme}`}>
       <div className="nav-left">
-        <img src="/logo.png" alt="Prep Logo" className="nav-logo" />
+        <img src={logoImage} alt="Prep Logo" className="nav-logo" />
         <span className="app-name">Prep</span>
       </div>
       <div className="nav-right">

@@ -139,4 +139,4 @@ MIT
 
 ## Support
 
-For issues or questions, use the contact form in the app's footer or visit the support page.
+For issues or questions, use the contact form in the app's footer or visit the support page..

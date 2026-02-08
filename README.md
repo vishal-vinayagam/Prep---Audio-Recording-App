@@ -56,7 +56,7 @@ npm run lint
 npm run build
 ```
 
-The app will be available at `http://localhost:5173`
+The app will be available at `http://localhost:5073`
 
 ## Project Structure
 
